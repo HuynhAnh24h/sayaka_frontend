@@ -1333,6 +1333,15 @@ blockquote {
 	font-size: 30px;
 }
 
+#chat_fb{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+}
+
 
 
 
