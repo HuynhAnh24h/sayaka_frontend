@@ -163,10 +163,11 @@ img{
 .top-navbar{
 	position: relative;
 	z-index: 10;
+    background: #ffffff;
+    box-shadow: 2px 5px 6px rgba(0,0,0,0.5);
 }
 
 .top-navbar .navbar{
-	padding: 5px 0px;
 	position: fixed;
 	width: 100%;
 	transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
@@ -177,9 +178,11 @@ img{
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
 	color: #010101;
-	font-size: 18px;
-	padding: 0px 20px;
+	font-size: 16px;
+	padding: 1px 25px;
+    border: 1px solid #f8f9fa;
 	border-radius: 4px;
+    transition: 0.3s linear;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
@@ -194,7 +197,7 @@ img{
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{
 	border: none;
-	 box-shadow: 2px 5px 6px rgba(0,0,0,0.5);
+	box-shadow: 2px 5px 6px rgba(0,0,0,0.5);
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover{
@@ -322,7 +325,7 @@ img{
 .about-section-box .img-fluid{
 	box-shadow: -10px -10px 0px brown;
 }
-.inner-column{}
+
 .inner-column h1{
 	font-family: 'Arbutus Slab', serif;
 	font-size: 30px;
@@ -943,7 +946,6 @@ img{
 }
 
 .blog-box-inner .blog-detail{
-	position: absolute;
 	top: 0;
 	background: #fff;
 	padding: 30px 25px;
