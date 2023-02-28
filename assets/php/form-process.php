@@ -4,39 +4,39 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Bạn chưa nhập tên";
 } else {
     $name = $_POST["name"];
 }
 
 // EMAIL
-if (empty($_POST["email"])) {
-    $errorMSG .= "rémad is required ";
+if (empty($_POST["phone"])) {
+    $errorMSG .= "Bạn chưa nhập số điện thoại";
 } else {
-    $email = $_POST["email"];
+    $phone = $_POST["phone"];
 }
 
 // MSG Guest
 if (empty($_POST["guest"])) {
-    $errorMSG .= "Subject is required ";
+    $errorMSG .= "Bạn chưa chọn số khách";
 } else {
     $guest = $_POST["guest"];
 }
 
 
 // MSG Event
-if (empty($_POST["event"])) {
-    $errorMSG .= "Subject is required ";
+if (empty($_POST["day"])) {
+    $day .= "Bạn chưa chọn ngày";
 } else {
-    $event = $_POST["event"];
+    $event = $_POST["day"];
 }
 
 
 // MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+if (empty($_POST["time"])) {
+    $time .= "Bạn chưa chọn giờ";
 } else {
-    $message = $_POST["message"];
+    $message = $_POST["time"];
 }
 
 
@@ -49,23 +49,23 @@ $Body .= "Name: ";
 $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";
-$Body .= $email;
+$Body .= $phone;
 $Body .= "\n";
 $Body .= "guest: ";
 $Body .= $guest;
 $Body .= "\n";
-$Body .= "event: ";
-$Body .= $event;
+$Body .= "day: ";
+$Body .= $day;
 $Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
+$Body .= "time";
+$Body .= $time;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+//$success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
 // redirect to success page
-if ($success && $errorMSG == ""){
+if ($errorMSG == ""){
    echo "success";
 }else{
     if($errorMSG == ""){
