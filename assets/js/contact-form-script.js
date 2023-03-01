@@ -15,15 +15,17 @@ function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var phone = $("#phone").val();
+    var restaurant = $("#restaurant");
     var guest  = $("#guest ").val();
     var day = $("#day").val();
     var time =$("#time").val();
+    var notice = $("#notice").val();
 
 
     $.ajax({
         type: "POST",
         url: "./php/form-process.php",
-        data: "name=" + name + "&phone=" + phone + "&guest=" + guest + "&day=" + day + "&time=" + time,
+        data: "name=" + name + "&phone=" + phone + "&restaurant=" + restaurant + "&guest=" + guest + "&day=" + day + "&time=" + time + "&notice" + notice,
         success : function(text){
             if (text == "success"){
                 formSuccess();
