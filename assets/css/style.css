@@ -122,11 +122,6 @@ a,
     font-size: 16px;
 }
 
-.btn-custom :hover
-{
-    background-color: brown;
-    color: white;
-}
 
 .lead {
     font-size: 18px;
