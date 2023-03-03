@@ -115,10 +115,17 @@ a,
 
 .btn-custom {
     margin-top: 20px;
-    background-color: transparent !important;
+    background-color: white;
+    color: brown;
     border: 2px solid #ddd;
     padding: 12px 40px;
     font-size: 16px;
+}
+
+.btn-custom :hover
+{
+    background-color: brown;
+    color: white;
 }
 
 .lead {
